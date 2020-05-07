@@ -2,53 +2,123 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
     <title>"Portfólio Web Paulo Ricardo"</title>
+    <style>
+        body
+        {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .fundo {
+            background-color: rgb(2, 1, 0);
+            width: 100%;
+            background-image: url('Back_ground_pic1.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+
+        }
+
+        .fundoTexto {
+            width: fit-content;
+            height: fit-content;
+            background-color: rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
+            position: relative;
+            text-align:start;
+        }
+
+        .butom {
+            text-decoration: none;
+            color: seashell;
+            font-size: 1.25em;
+            font-weight: 600;
+            background-color: rgb(2, 1, 0);
+            padding: 5px 10px;
+            line-height: 20px;
+            margin: 1px;
+        }
+        .center
+        {
+            display: block;
+            margin-left: auto;
+  margin-right: auto;
+            width: 50%;
+        }
+
+
+        h1 {
+            text-align: center;
+            margin-left: 4em;
+        }
+        h2 ,h3, h4, h5, h6, ul, p {
+           
+            margin-left: 4em;
+            margin-right: 4em;
+        }
+        .imagem
+        {
+            
+            border-radius: 400px;
+        }
+        .text_align
+        {
+            text-align: right;
+        }
+    </style>
 </head>
 
 <body>
-    <h1 id="beginnig">Currículo Abril/2020</h1>
-    <ul>
-        <li><a href="#nome">Nome</a></li>
-        <li><a href="#detalhes">Detalhes</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#foto_Paulo">Foto</a></li>
-        <li><a href="#experiencia_prof">Experiências Profissionais</a></li>
-        <li><a href="#interesses">Interesses</a></li>
+    <div class="fundo">
 
-    </ul>
-    <h2 id="nome"><em>Paulo Ricardo Zambelli Taveira</em></h2> <br><br>
-    <img id="foto_Paulo" src="Paulo.jpg" alt="Foto de Paulo Ricardo Zambelli Taveira" width="100">
-    <h3 id="detalhes">32 anos, Brasileiro, Itajubá/MG</h3><br><br>
-    <h3>Formação:</h3>
-    <ul id="formacao">
-        <li><strong>Mestrando em Ciências e Tecnologia da Computação - UNIFEI, Itajubá</strong></li>
-        <br>
-        <li>Engenheiro de Controle e Automação - UNIFEI, Itajubá</li>
-        <br>
-        <li>Técnico em Mecatrônica - CBM, Ouro Branco</li>
-        <br>
-        <li>Professor particular de Cálculo, Física e Equações Diferenciais Ordinárias</li>
-    </ul>
-    <br><br>
-    <h3>Experiências Profissionais:</h3>
-    <ul id="experiencia_prof">
-        <li>Agente Local de Inovação (ALI) - Sebrae e CNPQ/MG</li>
-        <br>
-        <li>Engenheiro de Campo - Schlumberger - Macaé/Rj;</li>
-        <br>
-        <li>Engenheiro de Campo - Schlumberger - Kuwait;</li>
-        <br>
-        <li>Estagiário de Engenharia Industrial - AEES Group - Itajubá/MG</li>
-        <br>
-    </ul>
 
-    <p>Blogs de interesses:
-        <ul>
-            <li><a href="https://blog.betrybe.com/" target="_blank" id="interesses">Blog Trybe</a></li>
-        </ul>
-    </p>
-    <p><a href="#beginnig">Voltar para o início</a></p>
+        <a href="#nome" class="butom">Nome</a>
+        <a href="#detalhes" class="butom">Detalhes</a>
+        <a href="#formacao" class="butom">Formação</a>
+        <a href="#foto_Paulo" class="butom">Foto</a>
+        <a href="#experiencia_prof" class="butom">Experiências Profissionais</a>
+        <a href="#interesses" class="butom">Interesses</a>
+
+
+        <h1 id="nome"><em>Paulo Ricardo Zambelli Taveira</em></h1>
+        <div class="fundoTexto">
+
+            <img class="imagem center"  id="foto_Paulo"  src="Paulo.jpg" alt="Foto de Paulo Ricardo Zambelli Taveira" width="400" class="center" >
+            <h6 id="beginnig" class="text_align"> Atualizado Abril/2020</h6>
+
+            <h3 id="detalhes">32 anos, Brasileiro, Itajubá/MG</h3> 
+            <h3>Formação:</h3>
+            <ul id="formacao">
+                <li><strong>Mestrando em Ciências e Tecnologia da Computação - UNIFEI, Itajubá</strong></li>
+                <br>
+                <li>Engenheiro de Controle e Automação - UNIFEI, Itajubá</li>
+                <br>
+                <li>Técnico em Mecatrônica - CBM, Ouro Branco</li>
+                <br>
+                <li>Professor particular de Cálculo, Física e Equações Diferenciais Ordinárias</li>
+            </ul>
+            <br><br>
+            <h3>Experiências Profissionais:</h3>
+            <ul id="experiencia_prof">
+                <li>Agente Local de Inovação (ALI) - Sebrae e CNPQ/MG</li>
+                <br>
+                <li>Engenheiro de Campo - Schlumberger - Macaé/Rj;</li>
+                <br>
+                <li>Engenheiro de Campo - Schlumberger - Kuwait;</li>
+                <br>
+                <li>Estagiário de Engenharia Industrial - AEES Group - Itajubá/MG</li>
+                <br>
+            </ul>
+
+            <p>Blogs de interesses:
+                <ul>
+                    <li><a href="https://blog.betrybe.com/" target="_blank" id="interesses">Blog Trybe</a></li>
+                </ul>
+            </p>
+            <p><a href="#beginnig">Voltar para o início</a></p>
+        </div>
+        
+    </div>
 </body>
 
 
