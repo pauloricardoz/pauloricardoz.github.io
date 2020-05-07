@@ -8,6 +8,11 @@
         body {
             background-color: ivory;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+        .no_link
+        {
+            text-decoration: none;
         }
 
         .fundo {
@@ -89,11 +94,14 @@
         .tam_hab3 {
             font-size: 0.8em;
         }
+
+        ul{list-style-type: circle;}
+
     </style>
 </head>
 
 <body>
-    <div class="fundo">
+    <div class="fundo" id="beginnig">
 
 
         <a href="#nome" class="butom">Nome</a>
@@ -103,6 +111,7 @@
         <a href="#formacao" class="butom">Formação</a>
         <a href="#experiencia_prof" class="butom">Experiências Profissionais</a>
         <a href="#interesses" class="butom">Interesses</a>
+        <a href="#Repositorio" class="butom">Repositórios</a>
 
 
         <h1 id="nome"><em>Paulo Ricardo Zambelli Taveira</em></h1>
@@ -110,7 +119,7 @@
 
             <img class="imagem center" id="foto_Paulo" src="Paulo.jpg" alt="Foto de Paulo Ricardo Zambelli Taveira"
                 width="400" class="center">
-            <h6 id="beginnig" class="text_align"> Atualizado Abril/2020</h6>
+            <h6  class="text_align"> Atualizado Abril/2020</h6>
 
             <h3 id="detalhes" class="italico">32 anos, <em>Brasileiro</em>, <em>Itajubá/MG</em></h3>
             <h3 id="habilidades">Habilidades:</h3>
@@ -132,7 +141,7 @@
             <br>
             <h3>Formação:</h3>
             <ul id="formacao">
-                <li><strong>Mestrando em Ciências e Tecnologia da Computação - UNIFEI, Itajubá</strong></li>
+                <li>Mestrando em Ciências e Tecnologia da Computação - UNIFEI, Itajubá</li>
                 <br>
                 <li>Engenheiro de Controle e Automação - UNIFEI, Itajubá</li>
                 <br>
@@ -155,8 +164,15 @@
 
             <p>Blogs de interesses:
                 <ul>
-                    <li><a href="https://blog.betrybe.com/" target="_blank" id="interesses">Blog Trybe</a></li>
+                    <li><a class="no_link" href="https://blog.betrybe.com/" target="_blank" id="interesses">Blog Trybe</a></li>
                 </ul>
+            </p>
+            <p id="Repositorio">Repositórios:
+                <ul>
+                    <li><a class="no_link" href="https://github.com/pauloricardoz/Projects" target="_blank" >Projetos pessoais</a></li>
+                    <br><li><a class="no_link" href="https://github.com/pauloricardoz/TRYBE" target="_blank" >Trybe</a></li>
+                </ul>
+                
             </p>
             <p><a href="#beginnig">Voltar para o início</a></p>
         </div>
