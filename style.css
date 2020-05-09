@@ -98,9 +98,7 @@ footer {
     justify-content: center;
 }
 
-div {
-    border-style: solid;
-}
+
 
 .sideOfPicture
 {
@@ -124,4 +122,9 @@ div {
     
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 10px;
+}
+
+.impares
+{
+    font-style: italic;
 }
