@@ -52,9 +52,7 @@ h2, h3, h4, h5, h6, ul, p {
     margin-right: 4em;
 }
 
-.imagem {
-    border-radius: 400px;
-}
+
 
 .text_align {
     text-align: right;
@@ -109,4 +107,18 @@ footer {
 
 div {
     border-style: solid;
+}
+
+.sideOfPicture
+{
+    display: inline-block;
+    text-align: left;    
+}
+.imagem {
+    border-radius: 10px;
+    width: 40%;
+}
+.descriptionPerson
+{
+    width: 50%;
 }
