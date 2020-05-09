@@ -112,7 +112,7 @@ div {
 .sideOfPicture
 {
     display: inline-block;
-    text-align: left;    
+    vertical-align: middle;
 }
 .imagem {
     border-radius: 10px;
