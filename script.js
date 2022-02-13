@@ -13,8 +13,6 @@ function addEventListener() {
   });
 }
 
-addEventListener();
-
 function dragStart(e) {
   // console.log('dragStart');
   dragStartItem = e.target.children[0];
@@ -22,6 +20,10 @@ function dragStart(e) {
 }
 function dragOver(e) {
   e.preventDefault();
+  if (getParent(e.target) && !getParent(e.target).classList.contains('items'))
+    return;
+  if (getParent(e.target) === dragStartItem) return;
+  getParent(e.target) && getParent(e.target).classList.add('over');
 }
 function dragDrop(e) {
   getParent(e.target).classList.remove('over');
@@ -57,4 +59,7 @@ function myAge() {
   document.getElementById('age').innerText =
     new Date(new Date() - new Date('1988/03/05')).getUTCFullYear() - 1970;
 }
+
+addEventListener();
+
 myAge();
