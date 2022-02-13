@@ -7,6 +7,37 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
+
+<body>
+    <div class="fundo" id="beginnig">
+
+        <div class="content">
+
+        </div>
+
+    </div>
+    <script>
+        const content = document.getElementsByClassName('content')[ 0 ]
+        const boxsGenerator = (qty = 5) => {
+            const colors = [ 'red', 'blue', 'orange', 'purple', 'brown' ]
+            for (let i = 0; i < qty; i++) {
+                const box = document.createElement('div');
+                box.setAttribute('draggable', true)
+                box.classList.add(colors[ i % colors.length ], 'box', 'draggable');
+                box.innerHTML = `<div class="items">${i}</div>`
+                content.appendChild(box)
+            }
+        }
+        boxsGenerator(5)
+    </script>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
+
+<!-- 
+
 <body>
     <div class="fundo" id="beginnig">
 
@@ -22,90 +53,93 @@
                 <a href="#Repositorio" class="butom">Repositórios</a>
             </nav>
         </div>
+        <button id="deleta">clear</button>
 
-        <div>
+        <h1 id="nome"><em>Paulo Ricardo Zambelli Taveira</em></h1>
+        <div class="update-at">
+            <span> Atualizado Abril/2020</span>
+        </div>
+        <div class="content">
+            <div draggable="true" class="history draggable">
+                <img class="sideOfPicture imagemDiv" id="foto_Paulo" src="Paulo.jpg"
+                    alt="Foto de Paulo Ricardo Zambelli Taveira" width="100" class="center">
 
-            <h1 id="nome"><em>Paulo Ricardo Zambelli Taveira</em></h1>
-            <div >
-                
-                    <img class="sideOfPicture imagemDiv" id="foto_Paulo" src="Paulo.jpg"
-                        alt="Foto de Paulo Ricardo Zambelli Taveira" width="100" class="center">
-                
-                
-                    <h3 class="sideOfPicture descriptionPerson fundoTexto" id="detalhes" >Sou nascido em Governador Valadares-MG, e criado em Ouro Branco-MG
-                        tenho 32 anos de idade. Moro atualmente em <em>Itajubá/MG</em>. Meus hobbies são leitura 
-                        (gosto de ficção, ação, investigação e material ligado a matemática e fisica), basquete e 
-                        nadar.</h3>
-                
-
+                <h3 class="sideOfPicture descriptionPerson fundoTexto" id="detalhes">Sou nascido em Governador
+                    Valadares-MG, e criado em Ouro Branco-MG
+                    tenho 32 anos de idade. Moro atualmente em <em>Itajubá/MG</em>. Meus hobbies são leitura
+                    (gosto de ficção, ação, investigação e material ligado a matemática e fisica), basquete e
+                    nadar.</h3>
             </div>
+            <div class="habilities draggable" draggable="true">
+                <h3 id="habilidades">Habilidades:</h3>
+                <ul>
+                    <li class="tam_hab1 impares">CSS</li>
+                    <br>
+                    <li class="tam_hab1">HTML</li>
+                    <br>
+                    <li class="tam_hab1 impares">Shell Script</li>
+                    <br>
+                    <li class="tam_hab1">Bash</li>
+                    <br>
+                    <li class="tam_hab2 impares">C#</li>
+                    <br>
+                    <li class="tam_hab3">VB.NET</li>
+                    <br>
+                    <li class="tam_hab3 impares">VBA</li>
+                </ul>
+            </div>
+            <div class="formation draggable" draggable="true">
+                <h3>Formação:</h3>
+                <ul id="formacao">
+                    <li>Mestrando em Ciências e Tecnologia da Computação - UNIFEI, Itajubá</li>
+                    <br>
+                    <li>Engenheiro de Controle e Automação - UNIFEI, Itajubá</li>
+                    <br>
+                    <li>Técnico em Mecatrônica - CBM, Ouro Branco</li>
+                    <br>
+                    <li>Professor particular de Cálculo, Física e Equações Diferenciais Ordinárias</li>
+                </ul>
+            </div>
+            <div class="experiences draggable" draggable="true">
 
-            <h6 class="text_align"> Atualizado Abril/2020</h6>
+                <h3>Experiências Profissionais:</h3>
+                <ul id="experiencia_prof">
+                    <li>Agente Local de Inovação (ALI) - Sebrae e CNPQ/MG</li>
+                    <br>
+                    <li>Engenheiro de Campo - Schlumberger - Macaé/Rj;</li>
+                    <br>
+                    <li>Engenheiro de Campo - Schlumberger - Kuwait;</li>
+                    <br>
+                    <li>Estagiário de Engenharia Industrial - AEES Group - Itajubá/MG</li>
+                    <br>
+                </ul>
+            </div>
+            <div class="blogs draggable" draggable="true">
 
+                <p>Blogs de interesses:
+                <ul>
+                    <li><a class="no_link" href="https://blog.betrybe.com/" target="_blank" id="interesses">Blog
+                            Trybe</a></li>
+                </ul>
+                </p>
+            </div>
+            <div class="repos draggable" draggable="true">
+
+                <p id="Repositorio">Repositórios:
+                <ul>
+                    <li><a class="no_link" href="https://github.com/pauloricardoz/Projects" target="_blank">Projetos
+                            pessoais</a></li>
+                    <br>
+                    <li><a class="no_link" href="https://github.com/pauloricardoz/TRYBE" target="_blank">Trybe</a></li>
+                </ul>
+
+                </p>
+            </div>
+            <p><a href="#beginnig">Voltar para o início</a></p>
         </div>
 
-
-
-        <h3 id="habilidades">Habilidades:</h3>
-        <ul>
-            <li class="tam_hab1 impares">CSS</li>
-            <br>
-            <li class="tam_hab1">HTML</li>
-            <br>
-            <li class="tam_hab1 impares">Shell Script</li>
-            <br>
-            <li class="tam_hab1">Bash</li>
-            <br>
-            <li class="tam_hab2 impares">C#</li>
-            <br>
-            <li class="tam_hab3">VB.NET</li>
-            <br>
-            <li class="tam_hab3 impares">VBA</li>
-        </ul>
-        <br>
-        <h3>Formação:</h3>
-        <ul id="formacao">
-            <li>Mestrando em Ciências e Tecnologia da Computação - UNIFEI, Itajubá</li>
-            <br>
-            <li>Engenheiro de Controle e Automação - UNIFEI, Itajubá</li>
-            <br>
-            <li>Técnico em Mecatrônica - CBM, Ouro Branco</li>
-            <br>
-            <li>Professor particular de Cálculo, Física e Equações Diferenciais Ordinárias</li>
-        </ul>
-        <br><br>
-        <h3>Experiências Profissionais:</h3>
-        <ul id="experiencia_prof">
-            <li>Agente Local de Inovação (ALI) - Sebrae e CNPQ/MG</li>
-            <br>
-            <li>Engenheiro de Campo - Schlumberger - Macaé/Rj;</li>
-            <br>
-            <li>Engenheiro de Campo - Schlumberger - Kuwait;</li>
-            <br>
-            <li>Estagiário de Engenharia Industrial - AEES Group - Itajubá/MG</li>
-            <br>
-        </ul>
-
-        <p>Blogs de interesses:
-            <ul>
-                <li><a class="no_link" href="https://blog.betrybe.com/" target="_blank" id="interesses">Blog
-                        Trybe</a></li>
-            </ul>
-        </p>
-        <p id="Repositorio">Repositórios:
-            <ul>
-                <li><a class="no_link" href="https://github.com/pauloricardoz/Projects" target="_blank">Projetos
-                        pessoais</a></li>
-                <br>
-                <li><a class="no_link" href="https://github.com/pauloricardoz/TRYBE" target="_blank">Trybe</a></li>
-            </ul>
-
-        </p>
-        <p><a href="#beginnig">Voltar para o início</a></p>
     </div>
 
-    </div>
+    <script src="script.js"></script>
 </body>
-
-
-</html>
+ -->

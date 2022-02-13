@@ -1,0 +1,153 @@
+body {
+  /* background-color: ivory; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.no_link {
+  text-decoration: none;
+}
+
+.fundo {
+  /* background-color: rgb(2, 1, 0);
+    width: 100%;
+    background-image: url('Back_ground_pic1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+  background-position: 50%;
+}
+
+.butom {
+  color: seashell;
+  font-size: 1em;
+  font-weight: 600;
+  background-color: rgb(2, 1, 0);
+  padding: 5px 10px;
+  line-height: 2em;
+  margin: 1em, 0, 07em;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+h1 {
+  text-align: center;
+  margin-left: 4em;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+span {
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+.text_align {
+  text-align: right;
+}
+.update-at {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.italico {
+  font-style: italic;
+}
+
+.tam_hab1 {
+  font-size: 1em;
+}
+
+.tam_hab2 {
+  font-size: 0.95em;
+}
+
+.tam_hab3 {
+  font-size: 0.8em;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+header nav {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 3;
+}
+
+.menu {
+}
+
+nav.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  flex-wrap: wrap;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sideOfPicture {
+  display: inline-block;
+  vertical-align: middle;
+}
+.imagemDiv {
+  border-radius: 40%;
+  width: 25%;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+}
+.descriptionPerson {
+  width: 50%;
+  margin-left: 50px;
+  line-height: 2em;
+}
+.fundoTexto {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+
+.impares {
+  font-style: italic;
+}
+
+.droppable {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+.droppableDestaque {
+  background-color: aqua;
+  border: 1px solid orange;
+}
+
+.destaque {
+  border: 1px solid purple;
+  background-color: purple;
+  opacity: 50%;
+}
+
+.droppableDestaque, .destaque {
+    transition: 0.4s;
+}

@@ -1,130 +1,60 @@
-body{
-    background-color: ivory;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+:root {
+  --box-border-color: #000;
+  --content-border-color: #f008;
+  --box-size: 250px;
+  --box-content-cover: 100%;
 }
 
-.no_link {
-    text-decoration: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.fundo {
-    background-color: rgb(2, 1, 0);
-    width: 100%;
-    background-image: url('Back_ground_pic1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
+body {
+  background-color: #fff;
 }
 
-
-
-.butom {
-    color: seashell;
-    font-size: 1em;
-    font-weight: 600;
-    background-color: rgb(2, 1, 0);
-    padding: 5px 10px;
-    line-height: 2em;
-    margin: 1.0em, 0, 07em;
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  border: 5px solid var(--content-border-color);
+}
+.box {
+  min-width: var(--box-size);
+  min-height: var(--box-size);
+  border: 1px solid var(--box-border-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box .items {
+  width: var(--box-content-cover);
+  height: var(--box-content-cover);
+  font-size: 4em;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.orange {
+  background-color: orange;
+}
+.purple {
+  background-color: purple;
+}
+.brown {
+  background-color: brown;
 }
 
-h1 {
-    text-align: center;
-    margin-left: 4em;
+.draggable {
+  cursor: pointer;
 }
 
-h2, h3, h4, h5, h6, ul, p {
-    margin-left: 4em;
-    margin-right: 4em;
-}
-
-
-
-.text_align {
-    text-align: right;
-}
-
-.italico {
-    font-style: italic;
-}
-
-.tam_hab1 {
-    font-size: 1em;
-}
-
-.tam_hab2 {
-    font-size: 0.95em;
-}
-
-.tam_hab3 {
-    font-size: 0.8em;
-}
-
-ul {
-    list-style-type: circle;
-}
-
-header nav {
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    z-index: 3;
-}
-
-.menu {
-    
-}
-
-nav.menu {
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    position: static;
-    background-color: black;
-    
-}
-
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-.sideOfPicture
-{
-    display: inline-block;
-    vertical-align: middle;
-}
-.imagemDiv {
-    border-radius: 10px;
-    width: 25%;
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 10px;
-    
-}
-.descriptionPerson
-{
-    width: 50%;
-    margin-left: 50px;
-    line-height: 2em;
-}
-.fundoTexto {
-    
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 10px;
-}
-
-.impares
-{
-    font-style: italic;
+.content .box.draggable .over {
+  opacity: 50%;
+  border: 10px solid;
 }
