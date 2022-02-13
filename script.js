@@ -52,3 +52,9 @@ function swap(from, to) {
   toContainer.appendChild(from);
   dragStartItem = null;
 }
+
+function myAge() {
+  document.getElementById('age').innerText =
+    new Date(new Date() - new Date('1988/03/05')).getUTCFullYear() - 1970;
+}
+myAge();

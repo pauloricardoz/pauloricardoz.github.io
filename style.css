@@ -15,11 +15,36 @@ body {
   background-color: #fff;
 }
 
+.top {
+  display: flex;
+  align-items: center;
+  font-size: 3vh;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.top img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+.top .name {
+  margin: 0 0 0 1em;
+  flex-grow: 1;
+}
+
+.top .update-at {
+  align-self: flex-end;
+  justify-self: end;
+  font-size: 2rem;
+}
+
 .content {
   display: flex;
   flex-wrap: wrap;
   border: 5px solid var(--content-border-color);
 }
+
 .box {
   min-width: var(--box-size);
   min-height: var(--box-size);
@@ -28,24 +53,37 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .box .items {
   width: var(--box-content-cover);
   height: var(--box-content-cover);
   font-size: 4em;
+  max-width: 45vw;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box .items li {
+  list-style: none;
 }
 
 .red {
   background-color: red;
 }
+
 .blue {
   background-color: blue;
 }
+
 .orange {
   background-color: orange;
 }
+
 .purple {
   background-color: purple;
 }
+
 .brown {
   background-color: brown;
 }
@@ -53,9 +91,44 @@ body {
 .draggable {
   cursor: pointer;
   padding: 10px;
+  margin: 20px;
+  border-radius: 20px;
 }
 
 .content div.box.draggable .over {
   opacity: 50%;
   border: 10px solid;
+}
+
+/* Shortest version */
+@media only screen and (max-width: 800px) {
+  .short {
+    display: none;
+  }
+
+  .shorter {
+    display: none;
+  }
+
+  .shortest {
+    display: none;
+  }
+}
+
+/* Shorter version */
+@media only screen and (max-width: 1100px) {
+  .short {
+    display: none;
+  }
+
+  .shorter {
+    display: none;
+  }
+}
+
+/* Short version */
+@media only screen and (max-width: 1600px) {
+  .short {
+    display: none;
+  }
 }
