@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="assets/css/meyawo.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+  <!-- Page Navbar -->
+  <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+    <div class="container">
+      <ul class="nav">
+        <li class="item">
+          <a class="link" href="/#home">Home</a>
+        </li>
+        <li class="item">
+          <a class="link" href="/lista-contas.html">Lista de Contas</a>
+        </li>
+        <li class="item">
+          <a class="link" href="/#about">About</a>
+        </li>
+        <!-- <li class="item">
+                    <a class="link" href="#portfolio">Portfolio</a>
+                </li> -->
+        <li class="item">
+          <a class="link" href="/#testmonial">Testmonial</a>
+        </li>
+        <!-- <li class="item">
+                    <a class="link" href="#blog">Blog</a>
+                </li> -->
+        <li class="item">
+          <a class="link" href="/#contact">Contact</a>
+        </li>
+      </ul>
+      <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </a>
+    </div>
+  </nav><!-- End of Page Navbar -->
+
+  <header id="home" class="header list-header">
+    <div class="overlay"></div>
+    <div class="header-content container">
+      <h1 class="header-title">
+        <span class="up">Lista de Contas</span>
+      </h1>
+    </div>
+  </header>
+  <section class="section pt-0">
+
+    <form onsubmit="submit(event)" id="form">
+      <input type="text" id="contaInput" placeholder="Digite o nome da conta" required>
+      <input type="number" id="dateInput" placeholder="dia vencimento" required max="31" min="1">
+      <input type="number" id="valorInput" placeholder="valor" required min="0">
+      <button type="submit" id="btn-submit">Adicionar</button>
+      <button type="reset" id="btn-reset">Limpar</button>
+    </form>
+    <ul id="lista">
+      <!-- As contas serão listadas aqui -->
+    </ul>
+
+    <div>
+
+      <a href="javascript:void(0)" id="entrar-edit" onclick="front.changeEditMode()">
+        <span>Editar</span>
+      </a>
+
+      <a href="javascript:void(0)" id="sair-edit" onclick="front.changeEditMode()" style="display: none;">
+        <span>Fechar edição</span>
+      </a>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
